@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD5EBFEC-F3B0-53E6-18F3-D2EAEA643FB2" schemaObject="1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB" name="CC_CONFIG_OPTIONS">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Configuration Options
+
+This table stores the database/application configuration option values for the corresponding instance(s)]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>80D3F362-E599-E7E6-64FC-BF9043A74C43</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OPTION_ID" id="AC79338B-6F8A-95CB-A709-50628AA12229">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>OPTIONS_ID</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key for the Configuration Options table]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>772957AA-471D-1B0C-B0BF-59F5E0436731</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_NAME" id="511A1A65-5F9D-8BC8-1FC6-8F0F0E2F27A1">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>OPTIONS_NAME</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the configuration option variable, this is the field that is filtered to retrieve specific configuration variables (e.g. "Application URL")]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>75882056-EF76-5E36-5097-956FBF60ABC7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_VALUE" id="634C9E90-9115-A9B9-AB60-3730338912F9">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>OPTIONS_VALUE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The value of the configuration option variable, this is the value used by other modules (e.g. "https://picmidd.nmfs.local/picd/f?p=PTS")]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>141487CF-EC91-EA30-A5E0-6AC5DB0F2D80</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_DESC" id="8DDC2DEB-50D5-2A30-D3F4-540493E081DF">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>OPTIONS_DESC</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The description of the given configuration option variable]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>30F7007D-B767-0F2F-6E15-D879BE732AC4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATE_DATE" id="2649C7DC-A4B2-75F7-268E-42758E552E53">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>CREATE_DATE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date on which this record was created in the database]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>12A49F3A-D504-3D45-26F5-D104DFEE459C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="0E857CEB-EB95-276C-02F7-56F1717BB3C4">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Oracle username of the person creating this record in the database]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>E84E965E-407A-5B41-1F56-FC0CF50AA7D2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_MOD_DATE" id="BAF08877-02E9-2A3B-D7C6-F6735671C0C0">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>LAST_MOD_DATE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[The last date on which any of the data in this record was changed]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>35726CFE-DC20-2505-E63B-18AE7999D6E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_MOD_BY" id="E29E1DC5-7CAD-4EFF-1A3A-7A1688A87EAF">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS</sourceObjSchema>
+<sourceObjName>LAST_MOD_BY</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Oracle username of the person making the most recent change to this record]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>14298F06-BD44-2196-F835-7D613709A4C8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A201CEF2-A447-20E4-72C3-6902790291A0" name="CC_CONFIG_OPTIONS_PK">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>5D0874E3-914B-2A29-991B-6EEAFB10B787</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC79338B-6F8A-95CB-A709-50628AA12229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79711A84-9188-239D-7123-91BEBC9DD1AE" name="CC_CONFIG_OPTIONS_U1">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_U1</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>9B327910-1955-9548-155B-FB8AE1B9BBA3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="511A1A65-5F9D-8BC8-1FC6-8F0F0E2F27A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E55D7C9A-0B10-AE59-0277-903E07B2B59D" schemaObject="1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB" name="CC_CONFIG_OPTIONS_PK">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>0F8CE7E5-C493-2232-3BF5-21F9D7493CFE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC79338B-6F8A-95CB-A709-50628AA12229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8730CD6A-5DC3-29F8-0861-50BBE3333487" schemaObject="1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB" name="CC_CONFIG_OPTIONS_U1">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_U1</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>D7F3E7D3-04BF-2BC8-C3F0-BF70F2669037</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="511A1A65-5F9D-8BC8-1FC6-8F0F0E2F27A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

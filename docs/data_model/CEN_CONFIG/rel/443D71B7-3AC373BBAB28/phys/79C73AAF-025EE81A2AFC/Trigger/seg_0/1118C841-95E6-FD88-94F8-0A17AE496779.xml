@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="CC_CONFIG_OPTIONS_AUTO_BRI" directorySegmentName="seg_0" id="1118C841-95E6-FD88-94F8-0A17AE496779">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_AUTO_BRI</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:29 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+  select CC_CONFIG_OPTIONS_SEQ.nextval into :new.OPTION_ID from dual;
+  :NEW.CREATE_DATE := SYSDATE;
+  :NEW.CREATED_BY := nvl(v('APP_USER'),user);
+end;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>EAB0CC6A-563D-5DF6-9692-85D22B09D900</owner>
+<table>FD5EBFEC-F3B0-53E6-18F3-D2EAEA643FB2</table>
+</TriggerOraclev10g>

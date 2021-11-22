@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="CEN_TOOLS" directorySegmentName="seg_0" id="EA5E6B91-055A-5AB9-D870-74B022DA0DC1">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CEN_TOOLS</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 02:45:10 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3ECF4700-40DB-17DE-599F-321CC1CA5EAC" schemaObject="1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB" name="CC_CONFIG_OPTIONS_HIST">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_HIST</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[History tracking table for CC_CONFIG_OPTIONS implemented using the DSC.DSC_CRE_HIST_OBJS_PKG package]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>CDE4A315-09E1-0248-840D-58C75911D5C9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="H_SEQNUM" id="7D9D04D8-0AFF-70E9-8ABF-00E942E84167">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_SEQNUM</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[A unique number for this record in the history table]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>A48CB22B-44A0-C308-2BE6-2127167EC3D8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPTION_ID" id="7AB73BDD-4900-9CB7-9043-D766C0D722C3">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>OPTION_ID</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column of the data table]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>96C1AB31-7039-B237-5F96-FB00525E226D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_TYPE_OF_CHANGE" id="F7848946-E972-AA19-6DAD-16B659626BF3">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_TYPE_OF_CHANGE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The type of change is INSERT, UPDATE or DELETE]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>851CF905-7252-2EE4-5A7D-DFBEA4CA3F01</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_DATE_OF_CHANGE" id="E4DE8238-DDED-D03A-81AD-E93496BE2633">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_DATE_OF_CHANGE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date and time the change was made to the data]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>5A4E118E-C744-24C7-8E68-C629498DC10A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_USER_MAKING_CHANGE" id="FA7ABBE3-C8A3-033F-621B-E6FAF7811E4C">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_USER_MAKING_CHANGE</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The person (Oracle username) making the change to the record]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>5229C2F1-067E-254D-D8B8-9EE75A08DBA4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_OS_USER" id="AA3AE0F7-8CE3-C72F-0635-45B3B47ED72D">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_OS_USER</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The OS username of the person making the change to the record]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>10BC3B65-9332-ADBF-21EA-D29F7A15C904</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_CHANGED_COLUMN" id="B50F3667-77D4-F381-9FDE-82A4A0DB4D8E">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_CHANGED_COLUMN</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the type of change is INSERT or UPDATE, the name of the column being changed]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>16EE68C1-AF80-F75F-553E-B94B80ADE812</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_OLD_DATA" id="65E4E658-DB65-2715-B14C-DA7F2D1E9324">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_OLD_DATA</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The data that has been updated]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>A37B69DB-DCAB-2223-411D-B3B43C1E1E1B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="H_NEW_DATA" id="4C15122A-F632-0584-7645-4A35380412B7">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CC_CONFIG_OPTIONS_HIST</sourceObjSchema>
+<sourceObjName>H_NEW_DATA</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[The updated column data]]></commentInRDBMS>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>391057B2-1219-3EE2-16D2-03723DA3B759</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78E84AA6-6F71-D01A-4D67-798965E3FCCC" name="CC_CONFIG_OPTIONS_HIST_PK">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_HIST_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>EA25DA18-F977-23CC-BE72-E6993AC292D4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D9D04D8-0AFF-70E9-8ABF-00E942E84167"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92049141-B3D9-365D-409B-2EF16F75D5E0" schemaObject="1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB" name="CC_CONFIG_OPTIONS_HIST_PK">
+<sourceConnName>PICD_CEN_CONFIG</sourceConnName>
+<sourceObjSchema>CEN_CONFIG</sourceObjSchema>
+<sourceObjName>CC_CONFIG_OPTIONS_HIST_PK</sourceObjName>
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-22 19:13:15 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<importedID>C0A7BEBF-2AA8-D87D-6523-005E50D3B0A9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D9D04D8-0AFF-70E9-8ABF-00E942E84167"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -6,5 +6,11 @@ The [Centralized Configuration Module (CCM)](https://gitlab.pifsc.gov/centralize
 ## Prerequisites:
 - Oracle 12c or higher
 
+## Installing
+- [Installation Documentation](./docs/Centralized%20Configuration%20-%20Installing%20or%20Upgrading%20the%20Database.md)
+
+## Resources
+- [CCM Documentation](./docs/Centralized%20Configuration%20Database%20Documentation.md)
+
 ## Version Control Platform
 - Git

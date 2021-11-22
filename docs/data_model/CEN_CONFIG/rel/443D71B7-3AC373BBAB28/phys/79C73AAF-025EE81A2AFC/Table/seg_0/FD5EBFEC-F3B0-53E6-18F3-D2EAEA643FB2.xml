@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CC_CONFIG_OPTIONS" directorySegmentName="seg_0" id="FD5EBFEC-F3B0-53E6-18F3-D2EAEA643FB2">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<schemaObject>1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7463A2AA-4F36-68C4-E16A-AEB59DFA53BF</segment>
+<tableSpace>EA5E6B91-055A-5AB9-D870-74B022DA0DC1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CREATED_BY" id="0E857CEB-EB95-276C-02F7-56F1717BB3C4">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATE_DATE" id="2649C7DC-A4B2-75F7-268E-42758E552E53">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPTION_NAME" id="511A1A65-5F9D-8BC8-1FC6-8F0F0E2F27A1">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPTION_VALUE" id="634C9E90-9115-A9B9-AB60-3730338912F9">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPTION_DESC" id="8DDC2DEB-50D5-2A30-D3F4-540493E081DF">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OPTION_ID" id="AC79338B-6F8A-95CB-A709-50628AA12229">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_MOD_DATE" id="BAF08877-02E9-2A3B-D7C6-F6735671C0C0">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:52 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_MOD_BY" id="E29E1DC5-7CAD-4EFF-1A3A-7A1688A87EAF">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CC_CONFIG_OPTIONS_U1" id="8730CD6A-5DC3-29F8-0861-50BBE3333487">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<schemaObject>1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB</schemaObject>
+<segment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</segment>
+<tableSpace>EA5E6B91-055A-5AB9-D870-74B022DA0DC1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CC_CONFIG_OPTIONS_PK" id="E55D7C9A-0B10-AE59-0277-903E07B2B59D">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<schemaObject>1ED5FA4D-9FB2-9A60-82A9-F71D87198ECB</schemaObject>
+<segment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</segment>
+<tableSpace>EA5E6B91-055A-5AB9-D870-74B022DA0DC1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CC_CONFIG_OPTIONS_PK" id="A201CEF2-A447-20E4-72C3-6902790291A0">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<segment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</segment>
+<tableSpace>EA5E6B91-055A-5AB9-D870-74B022DA0DC1</tableSpace>
+<existingIndex>E55D7C9A-0B10-AE59-0277-903E07B2B59D</existingIndex>
+<indexSegment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CC_CONFIG_OPTIONS_U1" id="79711A84-9188-239D-7123-91BEBC9DD1AE">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 03:42:53 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<segment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</segment>
+<tableSpace>EA5E6B91-055A-5AB9-D870-74B022DA0DC1</tableSpace>
+<existingIndex>8730CD6A-5DC3-29F8-0861-50BBE3333487</existingIndex>
+<indexSegment>24913E3A-6360-1A4A-9B11-4BC957CC7EAC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

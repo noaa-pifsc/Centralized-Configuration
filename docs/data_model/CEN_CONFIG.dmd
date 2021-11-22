@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CEN_CONFIG" id="813058EA-85DE-7DCA-547D-0341892F81D1" version="3.5">
+<createdBy>Jesse.Abdul</createdBy>
+<createdTime>2021-11-19 02:27:12 UTC</createdTime>
+<ownerDesignName>CEN_CONFIG</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>813058EA-85DE-7DCA-547D-0341892F81D1</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="48C6B5BD-0FE1-799D-754F-D2000EC63015">
+<designStoragePath>C:\Users\Jesse.Abdul\Documents\Version Control\Git\centralized-configuration\docs\data_model</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A4267EC9-9AA2-06AE-9704-ABAE067B1904">
+<designStoragePath>C:\Users\Jesse.Abdul\Documents\Version Control\Git\centralized-configuration\docs\data_model</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
