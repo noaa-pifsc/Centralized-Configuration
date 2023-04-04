@@ -1,0 +1,3 @@
+X Develop a excel workbook for generating the DML to load the configuration record values
+
+_ develop simple APEX app for managing configuration records and restrict access to DATA_ADMIN role

@@ -26,3 +26,4 @@ The Centralized Configuration (CC) project was developed to provide a database m
             -   Files: dsc_cre_hist_objs_pkg.pks (package specs) and dsc_cre_hist_objs_pkg.pkb (package body)
         -   Database: N/A (last update on 4/21/2009)
     -   Description: This was developed by the PIFSC Systems Design Team (SDT) to track data changes to a given table over time to facilitate accountability, troubleshooting, etc.  The Centralized Configuration tables have had this functionality enabled.  The DSC_CRE_HIST_OBJS_PKG package is defined in the DSC schema, the CRE_HIST_TRG() procedure was executed using the data schema.  
+-   The [Centralized Configuration Data Generator Worksheet](./cc_data_generator.xlsx) can be used to generate DML INSERT statements to load configuration records.
