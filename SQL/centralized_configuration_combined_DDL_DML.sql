@@ -12,3 +12,4 @@
 
 --add each database upgrade file in sequential order here:
 @@upgrades/centralized_configuration_DDL_DML_upgrade_v1.0.sql
+@@upgrades/centralized_configuration_DDL_DML_upgrade_v1.1.sql
