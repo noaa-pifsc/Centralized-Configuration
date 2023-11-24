@@ -6,7 +6,7 @@ The Centralized Configuration (CC) project was developed to provide a database m
 ## Resources:
 -   CC Version Control Information:
     -   URL: git@picgitlab.nmfs.local:centralized-data-tools/centralized-configuration.git
-    -   Database: 1.0 (Git tag: centralized_configuration_db_v1.0)
+    -   Database: 1.1 (Git tag: centralized_configuration_db_v1.1)
 -   [Database Naming Conventions](./Centralized%20Configuration%20-%20DB%20Naming%20Conventions.md)
 -   [Database Diagram](./data_model/CEN_CONFIG_diagram.pdf)
     -   [Documentation](./Centralized%20Configuration%20DB%20Diagram%20Documentation.md)
