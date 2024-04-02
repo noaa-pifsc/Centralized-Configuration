@@ -2,6 +2,26 @@ X Develop a excel workbook for generating the DML to load the configuration reco
 
 _ develop simple APEX app for managing configuration records and restrict access to DATA_ADMIN role
 
+X CC_CONFIG_OPTIONS -> unique constraint on UPPER(OPTION_NAME)
 
-
-_ CC_CONFIG_OPTIONS -> unique constraint on UPPER(OPTION_NAME)
+version 1.0 testing:
+	version 1.1:
+		TEST_JDA_COMP: run SQL/deploy_dev.sql
+		TEST_JDA: run version 1.0, 1.1 upgrade files
+		verified no invalid objects
+		verified data models are equivalent
+	Version 1.0:
+		TEST_JDA_COMP: 
+			run deploy_dev.sql
+			run rollback v1.1.sql
+		TEST_JDA: run version 1.0 upgrade files
+		verified no invalid objects
+		verified data models are equivalent
+	Version 0.0:
+		TEST_JDA_COMP: 
+			run SQL/deploy_dev.sql
+			run rollback v1.1.sql
+			run rollback v1.0.sql
+		confirmed TEST_JDA_COMP schema has no objects
+	
+	

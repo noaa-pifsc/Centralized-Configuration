@@ -15,8 +15,8 @@ The Centralized Configuration (CC) project was developed to provide a database m
 -   The [Database Version Control Module (VCM)](https://github.com/PIFSC-NMFS-NOAA/Database-Version-Control-Module) must be installed on the given schema before the DB Logging Module can be installed.
     -   VCM Version Control Information:
     -   URL: git@github.com:PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule.git
-    -   Application: 1.0 (Git tag: db_vers_ctrl_v1.0)
-    -   Database: 0.2 (Git tag: db_vers_ctrl_db_v0.2)
+    -   SOP: 1.1 (Git tag: db_vers_ctrl_v1.1)
+    -   Database: 1.0 (Git tag: db_vers_ctrl_db_v1.0)
 -   [Installing or Upgrading the Database](./Centralized%20Configuration%20-%20Installing%20or%20Upgrading%20the%20Database.md)
 
 ## Features:
