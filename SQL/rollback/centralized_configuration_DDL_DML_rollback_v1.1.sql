@@ -7,9 +7,21 @@
 
 
 --------------------------------------------------------
---Centralized Configuration - Combined DDL/DML file:
+--Centralized Configuration - version 1.1 updates:
 --------------------------------------------------------
 
---add each database upgrade file in sequential order here:
-@@upgrades/centralized_configuration_DDL_DML_upgrade_v1.0.sql
-@@upgrades/centralized_configuration_DDL_DML_upgrade_v1.1.sql
+
+DROP INDEX CC_CONFIG_OPTIONS_U1;
+
+ALTER TABLE CC_CONFIG_OPTIONS ADD CONSTRAINT CC_CONFIG_OPTIONS_U1 UNIQUE
+(
+  OPTION_NAME
+)
+ENABLE;
+
+
+--drop DB upgrade log record for the DB version being rolled back
+DELETE FROM DB_UPGRADE_LOGS WHERE UPGRADE_APP_NAME = 'Centralized Configuration' AND UPGRADE_VERSION =  '1.1';
+
+--commit the DB_UPGRADE_LOGS record deletion
+COMMIT;

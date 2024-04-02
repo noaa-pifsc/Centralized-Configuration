@@ -6,7 +6,7 @@ The Centralized Configuration (CC) project was developed to provide a database m
 ## Resources:
 -   CC Version Control Information:
     -   URL: git@picgitlab.nmfs.local:centralized-data-tools/centralized-configuration.git
-    -   Database: 1.0 (Git tag: centralized_configuration_db_v1.0)
+    -   Database: 1.1 (Git tag: centralized_configuration_db_v1.1)
 -   [Database Naming Conventions](./Centralized%20Configuration%20-%20DB%20Naming%20Conventions.md)
 -   [Database Diagram](./data_model/CEN_CONFIG_diagram.pdf)
     -   [Documentation](./Centralized%20Configuration%20DB%20Diagram%20Documentation.md)
@@ -15,8 +15,8 @@ The Centralized Configuration (CC) project was developed to provide a database m
 -   The [Database Version Control Module (VCM)](https://github.com/PIFSC-NMFS-NOAA/Database-Version-Control-Module) must be installed on the given schema before the DB Logging Module can be installed.
     -   VCM Version Control Information:
     -   URL: git@github.com:PIFSC-NMFS-NOAA/PIFSC-DBVersionControlModule.git
-    -   Application: 1.0 (Git tag: db_vers_ctrl_v1.0)
-    -   Database: 0.2 (Git tag: db_vers_ctrl_db_v0.2)
+    -   SOP: 1.1 (Git tag: db_vers_ctrl_v1.1)
+    -   Database: 1.0 (Git tag: db_vers_ctrl_db_v1.0)
 -   [Installing or Upgrading the Database](./Centralized%20Configuration%20-%20Installing%20or%20Upgrading%20the%20Database.md)
 
 ## Features:
@@ -27,3 +27,24 @@ The Centralized Configuration (CC) project was developed to provide a database m
         -   Database: N/A (last update on 4/21/2009)
     -   Description: This was developed by the PIFSC Systems Design Team (SDT) to track data changes to a given table over time to facilitate accountability, troubleshooting, etc.  The Centralized Configuration tables have had this functionality enabled.  The DSC_CRE_HIST_OBJS_PKG package is defined in the DSC schema, the CRE_HIST_TRG() procedure was executed using the data schema.  
 -   The [Centralized Configuration Data Generator Worksheet](./cc_data_generator.xlsx) can be used to generate DML INSERT statements to load configuration records.
+
+## DB Upgrade and Rollback Testing
+-   (using G:\security\DB\TEST_JDA\SQL\deploy_rollback_dev_CCM.sql):
+    -   version 1.1:
+        -   TEST_JDA_COMP: run SQL/deploy_dev.sql
+        -   TEST_JDA: run version 1.0, 1.1 upgrade files
+        -   verified no invalid objects
+        -   verified data models are equivalent
+    -   Version 1.0:
+        -   TEST_JDA_COMP:
+            -   run deploy_dev.sql
+            -   run rollback v1.1.sql
+        -   TEST_JDA: run version 1.0 upgrade files
+        -   verified no invalid objects
+        -   verified data models are equivalent
+    -   Version 0.0:
+        -   TEST_JDA_COMP:
+            -   run SQL/deploy_dev.sql
+            -   run rollback v1.1.sql
+            -   run rollback v1.0.sql
+        -   confirmed TEST_JDA_COMP schema has no objects
