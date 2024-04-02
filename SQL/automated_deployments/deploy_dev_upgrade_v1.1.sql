@@ -33,7 +33,7 @@ SET DEFINE OFF
 SHOW USER;
 
 PROMPT running DDL scripts to upgrade the database to version 1.1
-@centralized_configuration_DDL_DML_upgrade_v1.1.sql
+@upgrades/centralized_configuration_DDL_DML_upgrade_v1.1.sql
 
 
 DISCONNECT;
